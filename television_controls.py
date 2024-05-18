@@ -34,3 +34,8 @@ class TV():  # class
                 break  # Exit the loop if user inputted a valid volume(int)
             except ValueError:
                 print("You've submitted an invalid value! Try again.")
+
+    # create method that returns the current volume of the TV object
+    def get_current_volume(self):
+        return self.volume
+
