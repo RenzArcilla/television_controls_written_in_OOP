@@ -1,23 +1,23 @@
 class TV():  # class
     # parameterized constructor
-    def __init__(self, channel, volume, on_or_off):
+    def __init__(self, name, channel=0, volume=0):
         self.channel = channel
         self.volume = volume
-        self.on_or_off = on_or_off
+        self.name = name
 
     # create method for turning the TV on
     def turn_on(self):
-        print("object " + "is currently on")
+        print(self.name + " is currently on")
 
     # create method for turning the TV off
     def turn_off(self):
-        print("object " + "is currently off")
+        print(self.name + " is currently off")
 
     # create method that sets a new channel for the TV object
     def set_new_channel(self):
         while True:
             try:
-                self.channel = int(input("Set new channel for object: "))
+                self.channel = int(input("Set new channel for " + self.name))
                 break  # Exit the loop if user inputted a valid channel(int)
             except ValueError:
                 print("You've submitted an invalid value! Try again.")
@@ -30,7 +30,7 @@ class TV():  # class
     def set_new_volume(self):
         while True:
             try:
-                self.volume = int(input("Set new volume for object: "))
+                self.volume = int(input("Set new volume for " + self.name + ": "))
                 break  # Exit the loop if user inputted a valid volume(int)
             except ValueError:
                 print("You've submitted an invalid value! Try again.")
