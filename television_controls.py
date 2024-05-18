@@ -39,3 +39,10 @@ class TV():  # class
     def get_current_volume(self):
         return self.volume
 
+    # create method that increases the channel number of the TV object by 1
+    def channel_up(self):
+        self.channel = self.channel + 1
+
+    # create method that decreases the channel number of the TV object by 1
+    def channel_down(self):
+        self.channel = self.channel - 1
