@@ -46,3 +46,11 @@ class TV():  # class
     # create method that decreases the channel number of the TV object by 1
     def channel_down(self):
         self.channel = self.channel - 1
+
+    # create method that increases the volume of the TV object by 1
+    def volume_up(self):
+        self.volume = self.volume + 1
+
+    # create method that decreases the volume of the TV object by 1
+    def volume_down(self):
+        self.volume = self.volume - 1
