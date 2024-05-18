@@ -53,3 +53,15 @@ tv1.volume_down()
 tv1.get_current_channel()
 tv1.get_current_volume()
 tv1.turn_off()
+
+tv2 = TV("tv2")  # creates an object
+tv2.turn_on()  # calls a method
+tv2.set_new_channel()
+tv2.channel_up()
+tv2.channel_down()
+tv2.set_new_volume()
+tv2.volume_up()
+tv2.volume_down()
+tv2.get_current_channel()
+tv2.get_current_volume()
+tv2.turn_off()
