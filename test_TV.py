@@ -20,24 +20,45 @@
 #             create method that decreases the volume of the TV object by 1
 #
 #         create an object named tv1
-#             turn tv1 on
-#             set channel of tv1 to 30
-#             increase channel of tv1 by 1
-#             decrease channel of tv1 by 1
-#             set volume of tv1 to 3
-#             increase volume of tv1 by 1
-#             decrease volume of tv1 by 1
-#             get the current channel and volume of tv1
+#             ask if user wants to turn tv1 on:
+#                 call method that turns the television on
+
+#                 ask if the user wants to set a channel for tv1:
+#                     call method that asks the user to input a channel
+
+#                 ask if the user wants to increase the channel by 1:
+#                     call method that increases the channel by 1:
+#                 ask if the user wants to decrease the channel by 1:
+#                     call method that decreases the channel by 1:
+
+#                 ask if the user wants to set a volume for tv1
+#                     call method that asks the user to input a channel
+
+#                 ask if the user wants to increase the volume by 1:
+#                     call method that increases the volume by 1:
+#                 ask if the user wants to decrease the volume by 1:
+#                     call method that decreases the volume by 1:
+
 
 #         create an object named tv2
-#             turn tv2 on
-#             set channel of tv2 to 3
-#             increase channel of tv2 by 1
-#             decrease channel of tv2 by 1
-#             set volume of tv2 to 2
-#             increase volume of tv2 by 1
-#             decrease volume of tv2 by 1
-#             get the current channel and volume of tv2
+#             ask if user wants to turn tv2 on:
+#                 call method that turns the television on
+
+#                 ask if the user wants to set a channel for tv2:
+#                     call method that asks the user to input a channel
+
+#                 ask if the user wants to increase the channel by 1:
+#                     call method that increases the channel by 1:
+#                 ask if the user wants to decrease the channel by 1:
+#                     call method that decreases the channel by 1:
+
+#                 ask if the user wants to set a volume for tv1
+#                     call method that asks the user to input a channel
+
+#                 ask if the user wants to increase the volume by 1:
+#                     call method that increases the volume by 1:
+#                 ask if the user wants to decrease the volume by 1:
+#                     call method that decreases the volume by 1:
 #     end:
 
 from television_controls import TV
