@@ -17,7 +17,7 @@ class TV():  # class
     def set_new_channel(self):
         while True:
             try:
-                self.channel = int(input("Set new channel for " + self.name))
+                self.channel = int(input("Set new channel for " + self.name + ": "))
                 break  # Exit the loop if user inputted a valid channel(int)
             except ValueError:
                 print("You've submitted an invalid value! Try again.")

@@ -44,3 +44,12 @@ from television_controls import TV
 
 tv1 = TV("tv1")  # creates an object
 tv1.turn_on()  # calls a method
+tv1.set_new_channel()
+tv1.channel_up()
+tv1.channel_down()
+tv1.set_new_volume()
+tv1.volume_up()
+tv1.volume_down()
+tv1.get_current_channel()
+tv1.get_current_volume()
+tv1.turn_off()
