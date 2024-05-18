@@ -39,3 +39,8 @@
 #             decrease volume of tv2 by 1
 #             get the current channel and volume of tv2
 #     end:
+
+from television_controls import TV
+
+tv1 = TV("tv1")  # creates an object
+tv1.turn_on()  # calls a method
