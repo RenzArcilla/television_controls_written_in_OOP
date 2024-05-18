@@ -18,10 +18,19 @@ class TV():  # class
         while True:
             try:
                 self.channel = int(input("Set new channel for object: "))
-                break  # Exit the loop if user inputted a valid int
+                break  # Exit the loop if user inputted a valid channel(int)
             except ValueError:
                 print("You've submitted an invalid value! Try again.")
 
     # create method that returns the current channel of the TV object
     def get_current_channel(self):
         return self.channel
+
+    # create method that sets a new volume for the TV object
+    def set_new_volume(self):
+        while True:
+            try:
+                self.volume = int(input("Set new volume for object: "))
+                break  # Exit the loop if user inputted a valid volume(int)
+            except ValueError:
+                print("You've submitted an invalid value! Try again.")
