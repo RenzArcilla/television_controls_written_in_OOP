@@ -97,7 +97,7 @@ off_or_on = "this_is_a_wrong_input"
 while off_or_on not in valid_inputs:
     off_or_on = input("Would you like to turn tv1 on (yes/no)? ")
     if off_or_on == "no":
-        print("Thank you for running this program!!!")
+        tv1.turn_off()
         break
 
     if off_or_on == "yes":
@@ -214,7 +214,7 @@ while off_or_on not in valid_inputs:
             user_turn_off = "this_is_a_wrong_input"
             while user_turn_off not in valid_inputs:
                 user_turn_off = input("Would you like to turn tv1 off (yes/no)? ")
-                if user_turn_off == "yes" or "no":
+                if user_turn_off in valid_inputs:
                     break
                 else:
                     print("You've inputted an invalid value. Choose again")
