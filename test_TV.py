@@ -90,36 +90,43 @@ from television_controls import TV
 #         create an object named tv2
 #             ask if user wants to turn tv2 on:
 tv1 = TV("tv1")  # creates an object
-off_or_on = input("Would you like to turn tv1 on (yes/no)? ")
-if off_or_on == "yes":
-    tv1.turn_on()
 
-    user_channel = input("Would you like to input a new channel (yes/no)? ")
-    if user_channel == "yes":
-        tv1.set_new_channel()
-    user_channel_up = input("Would you like to increase channel by 1 (yes/no)? ")
-    if user_channel == "yes":
-        tv1.channel_up()
-    user_channel_down = input("Would you like to decrease channel by 1 (yes/no)? ")
-    if user_channel == "yes":
-        tv1.channel_down()
+valid_inputs = ("yes", "no")
+off_or_on = "this_is_a_wrong_input"
+while off_or_on not in valid_inputs:
+    off_or_on = input("Would you like to turn tv1 on (yes/no)? ")
+    if off_or_on == "yes":
+        tv1.turn_on()
 
-    user_volume = input("Would you like to input a new volume (yes/no)? ")
-    if user_volume == "yes":
-        tv1.set_new_volume()
-    user_volume_up = input("Would you like to increase volume by 1 (yes/no)? ")
-    if user_volume == "yes":
-        tv1.volume_up()
-    user_volume_down = input("Would you like to decrease volume by 1 (yes/no)? ")
-    if user_volume == "yes":
-        tv1.volume_down()
+        user_channel = input("Would you like to input a new channel (yes/no)? ")
+        if user_channel == "yes":
+            tv1.set_new_channel()
+        user_channel_up = input("Would you like to increase channel by 1 (yes/no)? ")
+        if user_channel == "yes":
+            tv1.channel_up()
+        user_channel_down = input("Would you like to decrease channel by 1 (yes/no)? ")
+        if user_channel == "yes":
+            tv1.channel_down()
 
-    user_get_channel = input("Would you like to know the current channel (yes/no)? ")
-    if user_get_channel == "yes":
-        current_channel = tv1.get_current_channel()
-        print("The current channel is: " + str(current_channel))
+        user_volume = input("Would you like to input a new volume (yes/no)? ")
+        if user_volume == "yes":
+            tv1.set_new_volume()
+        user_volume_up = input("Would you like to increase volume by 1 (yes/no)? ")
+        if user_volume == "yes":
+            tv1.volume_up()
+        user_volume_down = input("Would you like to decrease volume by 1 (yes/no)? ")
+        if user_volume == "yes":
+            tv1.volume_down()
 
-    user_get_volume = input("Would you like to know the current volume (yes/no)? ")
-    if user_get_volume == "yes":
-        current_volume = tv1.get_current_volume()
-        print("The current channel is: " + str(current_volume))
+        user_get_channel = input("Would you like to know the current channel (yes/no)? ")
+        if user_get_channel == "yes":
+            current_channel = tv1.get_current_channel()
+            print("The current channel is: " + str(current_channel))
+
+        user_get_volume = input("Would you like to know the current volume (yes/no)? ")
+        if user_get_volume == "yes":
+            current_volume = tv1.get_current_volume()
+            print("The current channel is: " + str(current_volume))
+
+    else:
+        print("You've inputted an invalid value. Choose again")
