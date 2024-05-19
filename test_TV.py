@@ -220,7 +220,7 @@ while off_or_on not in valid_inputs:
 
             if user_turn_off == "no":
                 continue
-         g   elif user_turn_off == "yes":
+            elif user_turn_off == "yes":
                 tv1.turn_off()
                 break
 
