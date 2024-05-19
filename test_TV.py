@@ -99,48 +99,50 @@ while off_or_on not in valid_inputs:
     if off_or_on == "no":
         print("Thank you for running this program!!!")
         break
+    if off_or_on == "yes":
+        while True:
+            if off_or_on == "yes":
+                tv1.turn_on()
+                print("")
 
-    elif off_or_on == "yes":
-        tv1.turn_on()
-        print("")
+                user_channel = input("Would you like to input a new channel (yes/no)? ")
+                if user_channel == "yes":
+                    tv1.set_new_channel()
+                user_channel_up = input("Would you like to increase channel by 1 (yes/no)? ")
+                if user_channel == "yes":
+                    tv1.channel_up()
+                user_channel_down = input("Would you like to decrease channel by 1 (yes/no)? ")
+                if user_channel == "yes":
+                    tv1.channel_down()
+                    print("")
 
-        user_channel = input("Would you like to input a new channel (yes/no)? ")
-        if user_channel == "yes":
-            tv1.set_new_channel()
-        user_channel_up = input("Would you like to increase channel by 1 (yes/no)? ")
-        if user_channel == "yes":
-            tv1.channel_up()
-        user_channel_down = input("Would you like to decrease channel by 1 (yes/no)? ")
-        if user_channel == "yes":
-            tv1.channel_down()
-            print("")
+                user_volume = input("Would you like to input a new volume (yes/no)? ")
+                if user_volume == "yes":
+                    tv1.set_new_volume()
+                user_volume_up = input("Would you like to increase volume by 1 (yes/no)? ")
+                if user_volume == "yes":
+                    tv1.volume_up()
+                user_volume_down = input("Would you like to decrease volume by 1 (yes/no)? ")
+                if user_volume == "yes":
+                    tv1.volume_down()
+                    print("")
 
-        user_volume = input("Would you like to input a new volume (yes/no)? ")
-        if user_volume == "yes":
-            tv1.set_new_volume()
-        user_volume_up = input("Would you like to increase volume by 1 (yes/no)? ")
-        if user_volume == "yes":
-            tv1.volume_up()
-        user_volume_down = input("Would you like to decrease volume by 1 (yes/no)? ")
-        if user_volume == "yes":
-            tv1.volume_down()
-            print("")
+                user_get_channel = input("Would you like to know the current channel (yes/no)? ")
+                if user_get_channel == "yes":
+                    current_channel = tv1.get_current_channel()
+                    print("The current channel is: " + str(current_channel))
+                user_get_volume = input("Would you like to know the current volume (yes/no)? ")
+                if user_get_volume == "yes":
+                    current_volume = tv1.get_current_volume()
+                    print("The current channel is: " + str(current_volume))
+                    print("")
 
-        user_get_channel = input("Would you like to know the current channel (yes/no)? ")
-        if user_get_channel == "yes":
-            current_channel = tv1.get_current_channel()
-            print("The current channel is: " + str(current_channel))
-        user_get_volume = input("Would you like to know the current volume (yes/no)? ")
-        if user_get_volume == "yes":
-            current_volume = tv1.get_current_volume()
-            print("The current channel is: " + str(current_volume))
-            print("")
-
-        user_turn_off = input("Would you like to turn tv1 off (yes/no)? ")
-        if user_turn_off == "no":
-            continue
-        elif user_turn_off == "yes":
-            tv1.turn_off()
+                user_turn_off = input("Would you like to turn tv1 off (yes/no)? ")
+                if user_turn_off == "no":
+                    continue
+                elif user_turn_off == "yes":
+                    tv1.turn_off()
+                    break
 
     else:
         print("You've inputted an invalid value. Choose again")
