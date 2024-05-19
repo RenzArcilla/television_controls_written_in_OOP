@@ -63,26 +63,61 @@
 
 from television_controls import TV
 
-tv1 = TV("tv1")  # creates an object
-tv1.turn_on()  # calls a method
-tv1.set_new_channel()
-tv1.channel_up()
-tv1.channel_down()
-tv1.set_new_volume()
-tv1.volume_up()
-tv1.volume_down()
-tv1.get_current_channel()
-tv1.get_current_volume()
-tv1.turn_off()
+# tv1 = TV("tv1")  # creates an object
+# tv1.turn_on()  # calls a method
+# tv1.set_new_channel()
+# tv1.channel_up()
+# tv1.channel_down()
+# tv1.set_new_volume()
+# tv1.volume_up()
+# tv1.volume_down()
+# tv1.get_current_channel()
+# tv1.get_current_volume()
+# tv1.turn_off()
+#
+# tv2 = TV("tv2")  # creates an object
+# tv2.turn_on()  # calls a method
+# tv2.set_new_channel()
+# tv2.channel_up()
+# tv2.channel_down()
+# tv2.set_new_volume()
+# tv2.volume_up()
+# tv2.volume_down()
+# tv2.get_current_channel()
+# tv2.get_current_volume()
+# tv2.turn_off()
 
-tv2 = TV("tv2")  # creates an object
-tv2.turn_on()  # calls a method
-tv2.set_new_channel()
-tv2.channel_up()
-tv2.channel_down()
-tv2.set_new_volume()
-tv2.volume_up()
-tv2.volume_down()
-tv2.get_current_channel()
-tv2.get_current_volume()
-tv2.turn_off()
+#         create an object named tv2
+#             ask if user wants to turn tv2 on:
+tv1 = TV("tv1")  # creates an object
+off_or_on = input("Would you like to turn tv1 on (yes/no)? ")
+if off_or_on == "yes":
+    tv1.turn_on()
+
+    user_channel = input("Would you like to input a new channel (yes/no)? ")
+    if user_channel == "yes":
+        tv1.set_new_channel()
+    user_channel_up = input("Would you like to increase channel by 1 (yes/no)? ")
+    if user_channel == "yes":
+        tv1.channel_up()
+    user_channel_down = input("Would you like to decrease channel by 1 (yes/no)? ")
+    if user_channel == "yes":
+        tv1.channel_up()
+
+    user_volume = input("Would you like to input a new volume (yes/no)? ")
+    if user_volume == "yes":
+        tv1.set_new_volume()
+    user_volume_up = input("Would you like to increase volume by 1 (yes/no)? ")
+    if user_volume == "yes":
+        tv1.volume_up()
+    user_volume_down = input("Would you like to decrease volume by 1 (yes/no)? ")
+    if user_volume == "yes":
+        tv1.volume_up()
+
+    user_get_channel = input("Would you like to know the current channel (yes/no)? ")
+    if user_get_channel == "yes":
+        tv1.get_current_channel()
+
+    user_get_channel = input("Would you like to know the current volume (yes/no)? ")
+    if user_get_channel == "yes":
+        tv1.get_current_channel()
