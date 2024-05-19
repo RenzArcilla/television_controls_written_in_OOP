@@ -94,6 +94,7 @@ tv1 = TV("tv1")  # creates an object
 valid_inputs = ("yes", "no")
 off_or_on = "this_is_a_wrong_input"
 user_channel = "this_is_a_wrong_input"
+user_channel_up = "this_is_a_wrong_input"
 
 while off_or_on not in valid_inputs:
     off_or_on = input("Would you like to turn tv1 on (yes/no)? ")
@@ -112,12 +113,22 @@ while off_or_on not in valid_inputs:
                         tv1.set_new_channel()
                         print("")
                         break
+                    elif user_channel == "no":
+                        break
                     else:
                         print("You've inputted an invalid value. Choose again")
 
-                user_channel_up = input("Would you like to increase channel by 1 (yes/no)? ")
-                if user_channel == "yes":
-                    tv1.channel_up()
+                while user_channel_up not in valid_inputs:
+                    user_channel_up = input("Would you like to increase channel by 1 (yes/no)? ")
+                    if user_channel == "yes":
+                        tv1.channel_up()
+                        print("")
+                        break
+                    elif user_channel_up == "no":
+                        break
+                    else:
+                        print("You've inputted an invalid value. Choose again")
+
                 user_channel_down = input("Would you like to decrease channel by 1 (yes/no)? ")
                 if user_channel == "yes":
                     tv1.channel_down()
