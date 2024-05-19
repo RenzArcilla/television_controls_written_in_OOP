@@ -128,5 +128,10 @@ while off_or_on not in valid_inputs:
             current_volume = tv1.get_current_volume()
             print("The current channel is: " + str(current_volume))
 
+        off_or_off = input("Would you like to turn tv1 off (yes/no)? ")
+        if off_or_off == "yes":
+            tv1.turn_off()
+            break
+
     else:
         print("You've inputted an invalid value. Choose again")
