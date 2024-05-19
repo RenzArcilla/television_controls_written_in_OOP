@@ -120,6 +120,7 @@ while off_or_on not in valid_inputs:
                     print("")
                     break
                 elif user_channel == "no":
+                    print("")
                     break
                 else:
                     print("You've inputted an invalid value. Choose again")
@@ -131,6 +132,7 @@ while off_or_on not in valid_inputs:
                     print("")
                     break
                 elif user_channel_up == "no":
+                    print("")
                     break
                 else:
                     print("You've inputted an invalid value. Choose again")
@@ -142,6 +144,7 @@ while off_or_on not in valid_inputs:
                     print("")
                     break
                 elif user_channel_down == "no":
+                    print("")
                     break
                 else:
                     print("You've inputted an invalid value. Choose again")
@@ -153,6 +156,7 @@ while off_or_on not in valid_inputs:
                     print("")
                     break
                 elif user_volume == "no":
+                    print("")
                     break
                 else:
                     print("You've inputted an invalid value. Choose again")
@@ -164,6 +168,7 @@ while off_or_on not in valid_inputs:
                     print("")
                     break
                 elif user_volume_up == "no":
+                    print("")
                     break
                 else:
                     print("You've inputted an invalid value. Choose again")
@@ -175,6 +180,7 @@ while off_or_on not in valid_inputs:
                     print("")
                     break
                 elif user_volume_down == "no":
+                    print("")
                     break
                 else:
                     print("You've inputted an invalid value. Choose again")
@@ -187,6 +193,7 @@ while off_or_on not in valid_inputs:
                     print("")
                     break
                 elif user_get_channel == "no":
+                    print("")
                     break
                 else:
                     print("You've inputted an invalid value. Choose again")
@@ -199,6 +206,7 @@ while off_or_on not in valid_inputs:
                     print("")
                     break
                 elif user_get_volume == "no":
+                    print("")
                     break
                 else:
                     print("You've inputted an invalid value. Choose again")
@@ -212,7 +220,7 @@ while off_or_on not in valid_inputs:
 
             if user_turn_off == "no":
                 continue
-            elif user_turn_off == "yes":
+         g   elif user_turn_off == "yes":
                 tv1.turn_off()
                 break
 
