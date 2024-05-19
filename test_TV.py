@@ -99,6 +99,7 @@ user_channel_down = "this_is_a_wrong_input"
 user_volume = "this_is_a_wrong_input"
 user_volume_up = "this_is_a_wrong_input"
 user_volume_down = "this_is_a_wrong_input"
+user_get_channel = "this_is_a_wrong_input"
 
 while off_or_on not in valid_inputs:
     off_or_on = input("Would you like to turn tv1 on (yes/no)? ")
@@ -177,10 +178,18 @@ while off_or_on not in valid_inputs:
                     else:
                         print("You've inputted an invalid value. Choose again")
 
-                user_get_channel = input("Would you like to know the current channel (yes/no)? ")
-                if user_get_channel == "yes":
-                    current_channel = tv1.get_current_channel()
-                    print("The current channel is: " + str(current_channel))
+                while user_get_channel not in valid_inputs:
+                    user_get_channel = input("Would you like to know the current channel (yes/no)? ")
+                    if user_get_channel == "yes":
+                        current_channel = tv1.get_current_channel()
+                        print("The current channel is: " + str(current_channel))
+                        print("")
+                        break
+                    elif user_get_channel == "no":
+                        break
+                    else:
+                        print("You've inputted an invalid value. Choose again")
+
                 user_get_volume = input("Would you like to know the current volume (yes/no)? ")
                 if user_get_volume == "yes":
                     current_volume = tv1.get_current_volume()
